@@ -1,0 +1,170 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.appBackground {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url('https://s3-alpha-sig.figma.com/img/3d53/0406/75d71c3d3dd0f2625ec42071ba23379d?Expires=1694390400&Signature=CAc~zC6PFli9iyUnzMPfTg7WjIcMey1Pb4AEeSKppKuVjgcylWBGLt~9ksBl5jJTMLU-0j32tJ2H9eVzeox9FG3q-1w~GTtX68qqFUDpkO9NA87iQ4PWdSHHInr75k52fryvLqc44Xzn6EUTQ4Amipi0cL1gktObnExc4mhgKdaWM96fMVtQ-6N5P99jlo2zwoKFVcHGqVrHo0hBLPjatJWlHebvuOANgynMuWmb-EII99rFsy0~5S9FLPuivcsitjYorbE0G28G2MelPX6xjXa2pAmZjEHE7bPclbb191lKrofni3HvgRtCOy5ril5Ug9DOaamnPWRqBfqybkFO9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 35px;
+  background: url('https://s3-alpha-sig.figma.com/img/1202/3100/f649403bb59e1d1d8c1387602127c71f?Expires=1694390400&Signature=Dliy5cIjXeN71m99L1BJuOG7ZXQ1jvWF5XYR519EAhb1chOS3kXxfNi4Fhv2nC26THyFEdYDx1M~b8SCtKArtEkLiN0vg-yOOKPG0djSMmM4e7hOj2XU0PF9Kp4ZnvvEC3LrMv3-a7BWCn2J77ztWLm521zKREHLwwXVRGxrM7WyJrpKEa8Aby2AnkzzC2KS4GefILiDnVeBX5GYsz5vCA4m59zB-BkgPcwPF8gW9osskmO9Ze0FQe17zg5hfuODFiESr~TuQuqgRbES1gt9r9BRGDiPLxIaEO~mdV7y7y58wixRAPdB5UdHHssU0OR7QFwKInf9IA7qUwQ6JKjUlA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+}
+
+.weatherDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  background: linear-gradient(
+    168deg,
+    rgba(255, 255, 255, 0.18) 0.15%,
+    rgba(255, 255, 255, 0.04) 97.5%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  color: white;
+}
+
+.searchDiv {
+  border-radius: 24px;
+  border: 1px solid #d3d3d3;
+  background: rgb(68, 68, 60);
+  color: white;
+  opacity: 0.5;
+}
+
+.searchBar {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: rgb(68, 68, 60);
+  color: white;
+}
+
+.searchBar::placeholder {
+  color: white;
+}
+
+.weatherDataContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #cad2cf;
+}
+
+.nextDayForecastText {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.hourlyInfoContainer {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  background: linear-gradient(
+    168deg,
+    rgba(255, 255, 255, 0.18) 0.15%,
+    rgba(255, 255, 255, 0.04) 97.5%
+  );
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+}
+
+.iconConditionSize {
+  height: 100px;
+}
+
+.highlightsContainer {
+  border-radius: 35px;
+  background: linear-gradient(
+    168deg,
+    rgba(255, 255, 255, 0.18) 0.15%,
+    rgba(255, 255, 255, 0.04) 97.5%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  height: 200px;
+  margin: 10px;
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.highlightsText {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+
+.weatherInfoText {
+  text-align: left;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.weatherTempText {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.scrollableDiv {
+  overflow-x: scroll;
+  height: fit-content;
+  padding-bottom: 5px;
+}
+
+.searchIconZoom {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.searchIconZoom:hover {
+  transform: scale(1.5);
+}
